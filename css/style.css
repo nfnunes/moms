@@ -1,0 +1,395 @@
+:root{
+
+	--laranja: #98660d;
+	--laranjaClaro: #fff5e3;
+	--corFundo: #000;
+	--texto: #98660d;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: montserrat,Arial,Helvetica,nimbus sans l,sans-serif;
+}
+
+
+
+body,
+html{
+	padding: 0;
+	margin: 0;
+	background: var(--corFundo);
+	line-height: 20px;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--laranja);
+}
+
+.headerTop{
+	height: 32px;
+	background: var(--laranja);
+	display: flex;
+	align-items: center;
+	color: var(--corFundo);
+	font-size: 12px;
+	/*position: fixed;*/
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.headerTop a{
+	text-decoration: none;
+	color: var(--corFundo);
+}
+
+#headerTopMorada{
+	display: flex;
+}
+
+.header-morada,
+.header-gps,
+.header-tel,
+.header-email{
+	display: flex;
+	align-items: center;
+}
+
+.header-gps,
+.header-tel{
+	padding: 0 30px;
+}
+
+.header-facebook{
+	padding-right: 20px;
+	align-items: center;
+}
+
+.innerHeaderTop p,
+.innerHeaderTop .header-tel a,
+.innerHeaderTop .header-email a{
+	padding-left: 5px;
+}
+
+nav{
+	background: var(--corFundo);
+	height: 108px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	border-bottom: 3px solid var(--laranja);
+	display: flex;
+	position: fixed;
+	top: 32px;
+	width: 100%;
+}
+
+/*#logo{
+	width: 100px;
+}*/
+
+
+.innerNav,
+.innerHeaderTop{
+	width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.innerNav{
+	justify-content: flex-end;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	padding: 43px 15px 46px 15px;
+	color: var(--texto);
+	height: 108px;
+	
+}
+
+.activeNavLink{
+	color: var(--laranja);
+}
+
+
+
+
+#mainHeader{
+	padding: 30px;
+	background: var(--laranjaClaro);
+	border-top: 1px solid LightGray;
+	border-bottom: 1px solid LightGray;
+}
+
+.innerMainHeader{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+nav ul li a:hover{
+	color: var(--corFundo);
+	background: var(--laranja);
+}
+
+
+h1{
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+.content{
+	width: 1100px;
+	margin: 0 auto;
+	/*display: flex;*/
+	text-align: justify;
+
+	padding-top: 30px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#QuemSomos{
+	display: flex;
+}
+
+h2{
+	padding-top: 60px;
+	font-size: 35px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.content a{
+	text-decoration: none;
+	color: var(--texto);
+}
+
+#QuemSomos .logo{
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	flex: 1;
+	padding-right: 50px
+}
+
+#QuemSomos .logo img{
+	width: 100%;
+}
+
+#QuemSomos .quemSomosDesc{
+	padding-top: 140px;
+	font-size: 24px;
+	line-height: 40px;
+	flex: 1;
+	text-align: justify;
+}
+
+#QuemSomos .quemSomosDesc p{
+	padding-bottom: 20px;
+}
+
+
+
+#Precos{
+	padding-top: 40px;
+	font-size: 24px;
+	line-height: 40px;
+	display: flex;
+	text-align: justify;
+}
+
+ #Precos .lavar{
+	/*display: flex;*/
+	flex: 1;
+}
+
+#Precos .secar{
+	/*display: flex;*/
+	flex: 1;
+}
+
+
+#Precos .lavar_sym{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.lavar_texto{
+	padding-left: 60px;
+}
+
+.lavar_texto p{
+	padding-left: 60px;
+}
+
+.lavar_texto h4,
+.secar_texto h4{
+	padding-top: 30px;
+}
+
+#Precos .secar_sym{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.lavar_sym h3,
+.secar_sym h3{
+	padding-right: 40px;
+	font-size: 70px;
+	font-weight: 400;
+}
+
+
+.secar_texto{
+	padding-left: 90px;
+}
+
+.secar_texto h4{
+	padding-left: 30px;
+}
+
+.secar_preco{
+	padding-left: 60px;
+	padding-bottom: 30px;
+}
+
+.secar_extra{
+	padding-top: 20px;
+	font-style: italic;
+	text-align: right;
+}
+
+
+#Precos h4{
+	padding-bottom: 20px;
+}
+
+
+#Serviços{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+#Serviços ul{
+	list-style: none;
+	line-height: 
+}
+
+#Serviços ul li:before{
+	content: '✓';
+	padding-right: 20px;
+}
+
+
+
+#Empresas{
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+#Empresas .Empresas_desc{
+}
+
+#Empresas .Empresas_desc p{
+	padding-top: 10px;
+}
+
+#Empresas .Empresas_desc h2{
+	font-weight: 600;
+}
+
+#Empresas .Empresas_img{
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+}
+
+#Empresas .Empresas_img .carro{
+	padding-right: 20px;
+	flex: 1.5;
+text-align: center;
+}
+
+#Empresas .Empresas_img .reticencias{
+
+	padding-right: 20px;
+	flex: 0.5;
+}
+
+#Empresas .Empresas_img .maqLavar{
+
+	padding-right: 10px;
+	flex: 0.9;
+}
+
+#Empresas .Empresas_img .mais{
+
+	padding-right: 10px;
+	flex: 0.3;
+}
+
+#Empresas .Empresas_img .roupa{
+
+	padding-right: 10px;
+	flex: 1;
+}
+
+#Empresas .Empresas_img .roupaDobrada{
+
+	padding-right: 20px;
+	flex: 1;
+}
+
+#Empresas .Empresas_img .fabrica{
+
+	padding-right: 20px;
+	flex: 1;
+}
+
+#Empresas .Empresas_legenda{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+#Contactos{
+	display: flex;
+}
+
+#Contactos iframe{
+	border: 8px solid var(--laranja);
+	border-radius: 8px;
+	min-width: 500px;
+	min-height: 400px;
+}
+
+iframe{
+	border: 8px solid var(--laranja);
+	border-radius: 8px;
+	
+}
+
+
+
+
