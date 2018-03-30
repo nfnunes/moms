@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-		<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<title>Lavandaria Mom's</title>
@@ -57,11 +58,11 @@
 	<nav>
 		<div class="innerNav">
 			<ul>
-				<li><a class="activeNavLink" href="#QuemSomos" onclick="test('QuemSomos'); return false;">QUEM SOMOS</a></li>
-				<li><a href="#Precos" onclick="test('Precos'); return false;">PREÇOS</a></li>
-				<li><a href="#Serviços" onclick="test('Serviços'); return false;">SERVIÇOS</a></li>
-				<li><a href="#Empresas" onclick="test('Empresas'); return false;">EMPRESAS</a></li>
-				<li><a href="#S5">CONTACTOS</a></li>
+				<li><a id="linkQuem" href="#QuemSomos">QUEM SOMOS</a></li>
+				<li><a id="linkPrecos" href="#Precos">PREÇOS</a></li>
+				<li><a id="linkServicos" href="#Servicos">SERVIÇOS</a></li>
+				<li><a id="linkEmpresas" href="#Empresas">EMPRESAS</a></li>
+				<li><a id="linkConctatos" href="#Contactos">CONTACTOS</a></li>
 			</ul>		
 		</div>
 	</nav>
@@ -87,8 +88,8 @@
 		<div id="Precos">
 			<div class="lavar">
 				<div class="lavar_sym">
-					<h3>Lavar</h3>
 					<img src="img/lavar.svg">
+					<h3>Lavar</h3>
 				</div>
 
 				<div class="lavar_texto">
@@ -101,17 +102,18 @@
 					<h4>Máquina de 15Kg:</h4>
 					<p>Lavagem a frio - 7&euro;</p>
 					<p>Lavagem a quente - 7,5&euro;</p>
+					<p class="sup"><sup>*</sup>incluí detergente, amaciador e desinfetante.</p>
 					
 				</div>
 
- 			
+
 			</div>
 			
 
 			<div class="secar">
 				<div class="secar_sym">
-					<h3>Secar</h3>
 					<img src="img/secar.svg">
+					<h3>Secar</h3>
 				</div>
 
 				<div class="secar_texto">
@@ -123,12 +125,12 @@
 
 					
 
-						<p>Antes do ciclo terminar pode acrescentar moedas para aumentar o seu ciclo de secagem</p>
+					<p>Antes do ciclo terminar pode acrescentar moedas para aumentar o seu ciclo de secagem</p>
 
-						<div class="secar_extra">
-							<p>Por exemplo: + 20 cent. = 2min</p>
-							<p>+ 50cent. = 5min</p> 
-						</div>
+					<div class="secar_extra">
+						<p>Por exemplo: + 20 cent. = 2min</p>
+						<p>+ 50cent. = 5min</p> 
+					</div>
 					
 				</div>
 
@@ -136,7 +138,12 @@
 			
 		</div>
 
-		<div id="Serviços">
+		<div id="Servicos">
+
+			<p>Dispomos de um serviço de excelência, onde todos os pormenores contam, desde o atendimento passando pelo tratamento até à entrega.</p>
+
+			<p>A pensar no seu bem-estar, disponibilizamos um conjunto de serviços especializados capazes de responder às suas exigências.</p>
+
 			<ul>
 				<li>Limpeza a seco</li>
 				<li>Limpeza e restauro de peles</li>
@@ -150,50 +157,82 @@
 
 		<div id="Empresas">
 			<div class="Empresas_desc">
-					<p>A limpeza de uniformes é um bem necessário para a imagem da sua empresa.</p>
-					<p>Confiar os seus uniformes à MOM'S permite ganhar tempo e também simplificar a vida dos seus colaboradores.</p>
-					<p>Uma vez recebidos nas nossas lojas, os artigos entregues são sujeitos a um diagnóstico minucioso para um tratamento mais adequado. Para um resultado excelente, os artigos com nódoas são pré-tratados e submetidos à limpeza mais adequada à sua natureza.</p>
-					<h2>Como trabalhamos? É simples...</h2>
-					
-					<div class="Empresas_img">
-						<div class="carro"><img src="img/carro.svg" ></div>
-						<div class="reticencias"><img src="img/reticencias.svg" ></div>
-						<div class="maqLavar"><img src="img/maqLavar.svg" ></div>
-						<div class="mais"><img src="img/mais.svg" ></div>
-						<div class="roupa"><img src="img/roupa.svg" ></div>
-						<div class="mais"><img src="img/mais.svg" ></div>
-						<div class="roupaDobrada"><img src="img/roupaDobrada.svg" ></div>
-						<div class="reticencias"><img src="img/reticencias.svg" ></div>
-						<div class="fabrica"><img src="img/fabrica.svg" ></div>
-					</div>
+				<p>A limpeza de uniformes é um bem necessário para a imagem da sua empresa.</p>
+				<p>Confiar os seus uniformes à MOM'S permite ganhar tempo e também simplificar a vida dos seus colaboradores.</p>
+				<p>Uma vez recebidos nas nossas lojas, os artigos entregues são sujeitos a um diagnóstico minucioso para um tratamento mais adequado. Para um resultado excelente, os artigos com nódoas são pré-tratados e submetidos à limpeza mais adequada à sua natureza.</p>
+				<p>Garantimos ainda uma rápida eficiência no serviço, e orçamento ajustado à dimensão da sua empresa.</p>
+				<h2>Como trabalhamos? É simples...</h2>
 
-					<div class="Empresas_legenda">
-						<p>Recolhemos na sua empresa</p>
-						<p>Lavamos, secamos e dobramos</p>
-						<p>Devolvemos na sua empresa</p>
-					</div>					
+				<div class="Empresas_img">
+					<div class="carro"><img src="img/carro.svg" ></div>
+					<div class="reticencias"><img src="img/reticencias.svg" ></div>
+					<div class="maqLavar"><img src="img/maqLavar.svg" ></div>
+					<div class="mais"><img src="img/mais.svg" ></div>
+					<div class="roupa"><img src="img/roupa.svg" ></div>
+					<div class="mais"><img src="img/mais.svg" ></div>
+					<div class="roupaDobrada"><img src="img/roupaDobrada.svg" ></div>
+					<div class="reticencias"><img src="img/reticencias.svg" ></div>
+					<div class="fabrica"><img src="img/fabrica.svg" ></div>
+				</div>
+
+				<div class="Empresas_legenda">
+					<p>Recolhemos na sua empresa</p>
+					<p>Lavamos, secamos e dobramos</p>
+					<p>Devolvemos na sua empresa</p>
+				</div>					
 			</div>
 		</div>
 
 		<div id="Contactos">
 			<div class="morada">
-				bla
+				<div class="rua">
+					<i class="fas fa-map-marker-alt"></i>
+					<p><span>Morada:</span></p>
+					<p>Rua 26 de Dezembro, lote 4, R/C Frente D <br> Santo Estevão, Viseu</p>
+				</div>
+				<div class="coordenadas">
+					<i class="fas fa-globe"></i>
+					<p><span>Coordenadas GPS:</span></p>
+					<p>40º 40' 18.4"N 7º 55' 45.4"W</p>
+				</div>
+
+				<div class="horario">
+					<i class="far fa-clock"></i>
+					<p><span>Horário:</span></p>
+					<p>Todos os dias das 7h às 23h</p>
+				</div>
+				<div class="telefone">
+					<i class="fas fa-phone"></i>
+					<p><span>Telefone:</span></p>
+					<p>969 893 422</p>
+				</div>
+				<div class="email">
+					<i class="fas fa-at"></i>
+					<p><span>Email:</span></p>
+					<p>lavandariamoms@gmail.com</p>
+				</div>
+
+
+				<div class="comodidades">
+					<i class="fas fa-tv"></i>
+					<i class="fas fa-wifi"></i>
+					<i class="fas fa-coffee"></i>
+					<i class="far fa-newspaper"></i>
+				</div>
+
 			</div>
 			<div class="mapa">
 				<iframe
-
-  					frameborder="0"
-  					src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBsPG91bwtY-RUl89XVLNqu1C5YcEkRZXo&q=Lavandaria+MOMS,Viseu" allowfullscreen>
-				</iframe>
-			</div>
-			
-
+				src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBsPG91bwtY-RUl89XVLNqu1C5YcEkRZXo&q=Lavandaria+MOMS,Orgens" allowfullscreen>
+			</iframe>
 		</div>
 
 
+	</div>
 
-	</div> <!-- content -->
 
-<!-- AIzaSyBsPG91bwtY-RUl89XVLNqu1C5YcEkRZXo -->
+
+</div> <!-- content -->
+
 </body>
 </html>

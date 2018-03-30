@@ -21,6 +21,7 @@ html{
 	background: var(--corFundo);
 	line-height: 20px;
 	font-weight: 400;
+	font-size: 24px;
 	font-style: normal;
 	color: var(--laranja);
 }
@@ -32,7 +33,6 @@ html{
 	align-items: center;
 	color: var(--corFundo);
 	font-size: 12px;
-	/*position: fixed;*/
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -84,11 +84,6 @@ nav{
 	width: 100%;
 }
 
-/*#logo{
-	width: 100px;
-}*/
-
-
 .innerNav,
 .innerHeaderTop{
 	width: 1100px;
@@ -112,7 +107,7 @@ nav ul{
 
 nav ul li a{
 	text-decoration: none;
-	padding: 43px 15px 46px 15px;
+	padding: 45px 15px;
 	color: var(--texto);
 	height: 108px;
 	
@@ -137,9 +132,18 @@ nav ul li a{
 	margin: 0 auto;
 }
 
-nav ul li a:hover{
+nav ul li a:link{}
+nav ul li a:visited{}
+
+nav ul li a:hover,
+.active{
 	color: var(--corFundo);
 	background: var(--laranja);
+}
+
+nav ul li a:active{
+color: var(--corFundo);
+	background: var(--laranja);	
 }
 
 
@@ -154,11 +158,8 @@ h1{
 .content{
 	width: 1100px;
 	margin: 0 auto;
-	/*display: flex;*/
 	text-align: justify;
-
 	padding-top: 30px;
-	font-size: 20px;
 	line-height: 30px;
 }
 
@@ -192,7 +193,6 @@ h2{
 
 #QuemSomos .quemSomosDesc{
 	padding-top: 140px;
-	font-size: 24px;
 	line-height: 40px;
 	flex: 1;
 	text-align: justify;
@@ -205,20 +205,17 @@ h2{
 
 
 #Precos{
-	padding-top: 40px;
-	font-size: 24px;
+	padding-top: 150px;
 	line-height: 40px;
 	display: flex;
 	text-align: justify;
 }
 
  #Precos .lavar{
-	/*display: flex;*/
 	flex: 1;
 }
 
 #Precos .secar{
-	/*display: flex;*/
 	flex: 1;
 }
 
@@ -243,6 +240,15 @@ h2{
 	padding-top: 30px;
 }
 
+#Precos .lavar_sym img{
+	max-width: 80px;
+}
+
+#Precos .secar_sym img{
+	max-width: 50px;
+}
+
+
 #Precos .secar_sym{
 	display: flex;
 	align-items: center;
@@ -250,9 +256,13 @@ h2{
 	padding-bottom: 30px;
 }
 
+#Precos .sup{
+	font-size: 16px;
+}
+
 .lavar_sym h3,
 .secar_sym h3{
-	padding-right: 40px;
+	padding-left: 20px;
 	font-size: 70px;
 	font-weight: 400;
 }
@@ -283,19 +293,19 @@ h2{
 }
 
 
-#Serviços{
-	padding-top: 40px;
+#Servicos{
+	padding-top: 150px;
 	padding-bottom: 40px;
-	font-size: 24px;
 	line-height: 40px;
 }
 
-#Serviços ul{
+#Servicos ul{
+	padding-top: 40px;
 	list-style: none;
 	line-height: 
 }
 
-#Serviços ul li:before{
+#Servicos ul li:before{
 	content: '✓';
 	padding-right: 20px;
 }
@@ -303,7 +313,7 @@ h2{
 
 
 #Empresas{
-	padding-top: 60px;
+	padding-top: 150px;
 	display: flex;
 	flex-direction: row;
 }
@@ -371,10 +381,14 @@ text-align: center;
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 100px;
+	font-size: 20px;
 }
 
 #Contactos{
 	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+	font-size: 20px;
 }
 
 #Contactos iframe{
@@ -384,11 +398,52 @@ text-align: center;
 	min-height: 400px;
 }
 
-iframe{
-	border: 8px solid var(--laranja);
-	border-radius: 8px;
-	
+#Contactos .rua,
+#Contactos .coordenadas,
+#Contactos .horario,
+#Contactos .telefone,
+#Contactos .email{
+	display: flex;
+	align-items: center;
+	padding-bottom: 25px;
 }
+
+#Contactos .rua{
+	align-items:flex-start;
+}
+
+#Contactos .comodidades{
+	padding-top: 35px;
+
+	display: flex;
+	font-size: 55px;
+	justify-content: space-around;
+}
+
+
+#Contactos span{
+	padding: 0 10px;
+	font-weight: 600;
+}
+
+
+@media all and (max-width: 980px) {
+	.innerNav,
+	.innerHeaderTop{
+		width: 940px;
+	}
+
+	.content{
+		width: 940px;
+	}
+
+	.header-gps,
+	.header-tel{
+		padding: 0 10px;
+	}
+}
+@media all and (max-width: 736px) { ... }
+@media all and (max-width: 480px) { ... }
 
 
 
