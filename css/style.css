@@ -36,6 +36,7 @@ html{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 999;
 }
 
 .headerTop a{
@@ -83,6 +84,7 @@ nav{
 	position: fixed;
 	top: 32px;
 	width: 100%;
+	z-index: 999;
 }
 
 .innerNav,
