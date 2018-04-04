@@ -1,8 +1,12 @@
 :root{
 
-	--laranja: #98660d;
-	--laranjaClaro: #fff5e3;
+	/*--laranja: #98660d;*/
+	/*--laranja: #f3c108;*/
+	
+	--laranja: #efa303;
 	--corFundo: #000;
+	--corFundo2: #131313;
+	/*--corFundo: #656565;*/
 	--texto: #98660d;
 }
 
@@ -111,7 +115,7 @@ nav ul{
 nav ul li a{
 	text-decoration: none;
 	padding: 45px 15px;
-	color: var(--texto);
+	color: var(--laranja);
 	height: 108px;
 	
 }
@@ -131,16 +135,11 @@ nav .horario p{
 	padding-left: 15px;
 }
 
-.activeNavLink{
-	color: var(--laranja);
-}
-
-
 
 
 #mainHeader{
 	padding: 30px;
-	background: var(--laranjaClaro);
+	background: var(--laranja);
 	border-top: 1px solid LightGray;
 	border-bottom: 1px solid LightGray;
 }
@@ -170,8 +169,19 @@ color: var(--corFundo);
 	line-height: 30px;
 }
 
+.content2{
+	width: 1100px;
+	margin: 0 auto;
+	text-align: justify;
+	padding-top: 30px;
+	line-height: 30px;
+	display: flex;
+}
+
 #QuemSomos{
 	display: flex;
+	padding-top: 10px;
+	padding-bottom: 75px;
 }
 
 #QuemSomos h2{
@@ -183,7 +193,7 @@ color: var(--corFundo);
 
 .content a{
 	text-decoration: none;
-	color: var(--texto);
+	color: var(--laranja);
 }
 
 #QuemSomos .logo{
@@ -220,10 +230,12 @@ color: var(--corFundo);
 
 
 #Precos{
-	padding-top: 150px;
+	padding: 75px 0;
 	line-height: 30px;
 	display: flex;
 	text-align: justify;
+	width: 100%;
+	background-color: var(--corFundo2);
 }
 
  #Precos .lavar{
@@ -309,8 +321,7 @@ color: var(--corFundo);
 
 
 #Servicos{
-	padding-top: 150px;
-	padding-bottom: 40px;
+	padding: 75px 0;
 	line-height: 40px;
 }
 
@@ -328,9 +339,10 @@ color: var(--corFundo);
 
 
 #Empresas{
-	padding-top: 150px;
+	padding: 75px 0;
 	display: flex;
 	flex-direction: row;
+	background-color: var(--corFundo2);
 }
 
 #Empresas .Empresas_desc{
@@ -398,15 +410,21 @@ text-align: center;
 #Empresas .Empresas_legenda{
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	font-size: 20px;
+}
+
+#Espaco{
+	padding: 75px 0;
 }
 
 #Contactos{
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 110px;
+	padding-top: 75px;
+	padding-bottom: 300px;
 	font-size: 20px;
+	background-color: var(--corFundo2);
 }
 
 #Contactos iframe{
@@ -418,7 +436,6 @@ text-align: center;
 
 #Contactos .rua,
 #Contactos .coordenadas,
-#Contactos .horario,
 #Contactos .telefone,
 #Contactos .email{
 	display: flex;
@@ -434,6 +451,22 @@ text-align: center;
 #Contactos span{
 	padding: 0 10px;
 	font-weight: 600;
+}
+
+.flexslider{
+	width: 63%;
+	margin: 0 auto;
+	border: 8px solid var(--laranja);
+}
+
+.flex-control-thumbs li {
+  width: 14.28%;
+}
+
+
+.flex-direction-nav a  {
+    line-height: 40px;
+    background-color: transparent;
 }
 
 

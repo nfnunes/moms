@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+$('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
     $("a").removeClass("active");
@@ -15,7 +21,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top -140
       }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
@@ -28,9 +34,9 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
+    var scroll = $(window).scrollTop() ;
 
-    if(scroll >= $('#QuemSomos').offset().top-150){
+    if(scroll >= $('#QuemSomos').offset().top-75){
         $("a").removeClass("active");
         $("#linkQuem").addClass("active");
     }
@@ -48,6 +54,11 @@ $(window).scroll(function (event) {
     if(scroll >= $('#Empresas').offset().top -150){
         $("a").removeClass("active");
         $("#linkEmpresas").addClass("active");
+    }
+
+    if(scroll >= $('#Espaco').offset().top -150){
+        $("a").removeClass("active");
+        $("#linkEspaco").addClass("active");
     }
 
     if ((scroll + $(window).height()) > $(document).height()-100){
