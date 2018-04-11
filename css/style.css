@@ -17,9 +17,11 @@
 }
 
 
-
 body,
 html{
+	width: 100%;
+    height: 100%;
+    /*overflow-x: hidden;*/
 	padding: 0;
 	margin: 0;
 	background: var(--corFundo);
@@ -162,7 +164,7 @@ color: var(--corFundo);
 
 
 .content{
-	width: 1100px;
+	max-width: 1100px;
 	margin: 0 auto;
 	text-align: justify;
 	padding-top: 30px;
@@ -170,7 +172,7 @@ color: var(--corFundo);
 }
 
 .content2{
-	width: 1100px;
+	max-width: 1100px;
 	margin: 0 auto;
 	text-align: justify;
 	padding-top: 30px;
@@ -206,7 +208,7 @@ color: var(--corFundo);
 
 #QuemSomos .logo img{
 	width: 85%;
-	animation: rodar 4s ease-in infinite alternate;
+	animation: rodar 4s linear infinite;
 }
 
 
@@ -410,9 +412,9 @@ text-align: center;
 #Empresas .Empresas_legenda{
 	display: flex;
 	justify-content: space-between;
-	/*padding-bottom: 100px;*/
 	font-size: 20px;
 }
+
 
 #Espaco{
 	padding: 75px 0;
@@ -470,24 +472,77 @@ text-align: center;
 }
 
 
-@media all and (max-width: 980px) {
-	.innerNav,
-	.innerHeaderTop{
-		width: 940px;
-	}
-
-	.content{
-		width: 940px;
+@media all and (max-width: 1100px) {
+	.header-morada,
+	.innerNav
+	{
+		padding-left: 10px;
 	}
 
 	.header-gps,
 	.header-tel{
-		padding: 0 10px;
+		padding: 0 20px;
+	}
+
+
+	nav ul li a{
+		padding: 45px 11px;
+	}
+
+	#QuemSomos .logo{
+		padding-right: 0px;
+	}
+
+	#QuemSomos .quemSomosDesc,
+	.secar,
+	#Servicos{
+		padding-right: 60px;
+	}
+
+	.secar,
+	#Servicos,
+	#Empresas{
+		padding: 0 60px;
+	}
+
+	#Empresas .Empresas_legenda{
+	font-size: 18px;
+	}
+
+	#Contactos{
+		padding: 0 20px;
+	}
+
+	#Contactos .rua,
+	#Contactos .coordenadas,
+	#Contactos .telefone,
+	#Contactos .email{
+	flex-direction: column;
+	align-items: left;
+	}
+
+}
+
+
+/*@media all and (max-width: 980px) {
+		nav .horas{
+	font-size: 20px;
+	line-height: 40px;
+	}
+}*/
+
+
+
+@media all and (max-width: 660px) {
+	.lavar_texto p{
+	padding-left: 20px;
 	}
 }
-@media all and (max-width: 736px) { ... }
-@media all and (max-width: 480px) { ... }
 
+/*
+
+@media all and (max-width: 480px) { ... }
+*/
 
 @keyframes rodar { 
     from { 
