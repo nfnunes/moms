@@ -330,7 +330,6 @@ color: var(--corFundo);
 #Servicos ul{
 	padding-top: 40px;
 	list-style: none;
-	line-height: 
 }
 
 #Servicos ul li:before{
@@ -472,7 +471,8 @@ text-align: center;
 }
 
 
-@media all and (max-width: 1100px) {
+
+@media (max-width: 1100px)  {
 	.header-morada,
 	.innerNav
 	{
@@ -517,30 +517,26 @@ text-align: center;
 	#Contactos .coordenadas,
 	#Contactos .telefone,
 	#Contactos .email{
-	flex-direction: column;
-	align-items: left;
+		flex-direction: column;
+		align-items: flex-start;
 	}
-
 }
 
 
-/*@media all and (max-width: 980px) {
-		nav .horas{
-	font-size: 20px;
-	line-height: 40px;
-	}
-}*/
 
-
-
-@media all and (max-width: 660px) {
+@media (max-width: 768px)  {
 	.lavar_texto p{
 	padding-left: 20px;
 	}
+
+	.content2{
+		border: 2px solid red;
+	}
 }
 
-/*
 
+
+/*
 @media all and (max-width: 480px) { ... }
 */
 
