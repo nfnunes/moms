@@ -410,6 +410,34 @@
 		font-size: 18px;
 	}
 
+	#Empresas .parcerias{
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+	}
+
+	#Empresas .intro_parceria p{
+		padding-top: 75px;
+		text-align: center;
+	}
+
+	#Empresas .parcerias img{
+		width: 30%;
+		height: auto;
+	}
+
+	#Empresas .parcerias .casaBrilha{
+		padding-right: 80px;
+		text-align: right;
+		flex: 1;
+	}
+
+	#Empresas .parcerias .alma{
+		flex: 1;
+		text-align: left;
+	}
+
 
 	#Espaco{
 		padding: 75px 0;
